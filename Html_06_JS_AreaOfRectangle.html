@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Html&JS_Area of Rectangle</title>
+<script type="text/javascript">
+      function findArea()
+        {
+            let length = document.getElementById('length').value;
+            let breath = document.getElementById('breath').value;
+            document.getElementById('formula').innerHTML = '<span style="color:red"> Length * Breath  </span>'
+            document.getElementById('area').innerHTML = length * breath;              
+        }
+</script>
+</head>
+<body>
+    <div>
+        <p><h2>Calculate Area of Rectangle</h2></p> 
+        <label>Enter length of the Rectangle</label>
+        <input 
+            type="text" 
+            value="" 
+            id="length">  
+        <br>
+        <label>Enter breath of the Rectangle</label>
+        <input 
+            type="text" 
+            value="" 
+            id="breath">
+        <br>
+        <button onClick="findArea()"> Area </button>
+        <br>
+        <p>The formula for Area of Rectangle: <span id="formula"></span></p>
+        <p>The area of the rectangle is: <span id="area"></span> </p>    
+            
+     
+    </div>
+</body>
+</html>
+
+
+   

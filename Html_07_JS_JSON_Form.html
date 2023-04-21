@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Froms with Html & JS</title>
+
+     <!--below getting the values of the input in a variable inside a js fucntion is the constructing JSON object
+         to prevent some error "event.preventDefault()" is used-->
+     <script>
+       function submitForm()
+        {
+              event.preventDefault()
+              const PersonalDetails = 
+              {
+                  firstname: document.getElementById('firstname').value ,
+                  lastname: document.getElementById('lastname').value ,
+                  email: document.getElementById('email').value ,
+                  phone: document.getElementById('phone').value 
+              }
+              console.log(PersonalDetails)
+  
+        } 
+       function changeColor1()
+       {
+        //alert(ocument.getElementById('fname').innerHTML)
+      
+            document.getElementById('flabel').innerHTML = '<span style="color:red" >First Name</span>'
+       }
+       function changeColor2()
+       {
+            document.getElementById('flabel').innerHTML = '<span style="color:green" >Last Name</span>'
+       }
+       function focusIn()
+       {
+            document.getElementById('lname').style.backgroundColor='yellow'
+       }
+       function focusOut()
+       {
+           document.getElementById('lname').style.backgroundColor='pink'
+       }
+     </script>
+    </head> 
+<body> 
+
+  <form name= "my form" id= "my form" action="  " > 
+  <label id="flabel">First Name</label><br>
+  <input type="text" id="fname" name="fname" onfocus="changeColor1()" onfocusout="changeColor2()"> <br>
+  
+  <label id="llabel">Last Name</label><br>
+  <input type="text" id="lname" name="lname" onfocus="focusIn()" onblur="focusOut()" ><br>
+  <label id="email">Email</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label id="phone">Phone</label><br>
+  <input type="number" id="phone" name="phone" maxlength="10"> <br>
+ 
+  <button type="submit" value="Sign Up" onClick="submitForm()"> Signup </button>
+  
+</form>
+
+</body>
+</html>

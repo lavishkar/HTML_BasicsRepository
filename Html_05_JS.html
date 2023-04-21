@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Integrating JS with HTML </title>
+    <script type="text/javascript">
+        function myFirstfunction()
+        {
+            console.log('1st function is called');
+            document.getElementById('para1').innerHTML = '<p style= "color: blue"> I love Music </p> '
+        }
+        function mySecondfunction()
+        {
+            console.log('2nd function is called');
+            document.getElementById('para2').innerHTML = '<p style= "color: red">I like Sports </p> ' 
+        }
+        function myThirdfunction()
+        {
+            console.log('3rd funciton is called');
+            document.getElementById('para3').innerText = 'I like playing Guitar' 
+        } 
+        function myFourthfunction()
+        {
+            console.log('4th funciton is called');
+            document.getElementById('one').value = 'This change is done by calling JS function'
+        } 
+    </script>
+</head>
+<body>   
+    <div>
+        <p>My name is Ishanth </p>
+        <p id="para1">Music</p>
+        <button onclick="myFirstfunction()">Click1</button>
+        <p id="para2" style="color: green;">Sports</p>         
+        <button onclick="mySecondfunction()">Click2</button>
+        <p id="para3">Guitar</p>
+        <button onclick="myThirdfunction()">Click3</button> <br>
+        <input type="text" value="One" id="one" style="width: 400px;"   onclick="myFourthfunction()">  <br>
+        <input type="text" value="   "   id="one" style="width: 400px;"   onclick="this.value='This change is done without calling JS function but using this.value'">   
+    </div> 
+</body>
+</html>
