@@ -1,0 +1,10 @@
+/* The "shift +1" keys wont work for CSS files.
+   And "ctrl + /" is used to comment in CSS files. */
+
+   .greenfont{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: oblique;
+        color: green;
+        border: 6px;
+        font-size: larger;
+       }

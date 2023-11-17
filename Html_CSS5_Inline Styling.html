@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Customized CSS Classes</title>
+
+<Style>
+/* To comment something inside STYLE use this style with "ctrl + /" keys... */
+/* This is a Customized CSS Class, starts with dot followed by classname and this method is called as External Styling */
+    .para1{
+        color: blue;
+        size: 10px;
+    }
+
+    .para2{
+        color: brown;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 5px solid black;
+    }
+/* This is Inline Styling in HEAD using "id" which starts with #followed by idname */
+    #para3{
+        border: solid red;
+        margin: 40px;
+    }
+
+</Style>
+</head>
+<body>
+<!-- CSS Class starts with a dot follwed by a class name in the HEAD
+    Inside the class the properties ans value for them will be defined -->
+<p class="para1">For five years, Stephanie Macias has been reading and considering submissions to American Short Fiction, and she’s been instrumental in running our in-person events in Austin. A virtual Swiss Army Knife of artistic pursuits (she’s a writer, photographer, visual artist, musician, and editor), </p>
+<p class="para2">Stephanie is now set to bring her broad experience and enthusiasm for stories to a new role at American Short Fiction: that of managing editor. As the outgoing managing editor, I’m both grateful for and proud of the work I’ve gotten to do during my tenure, and I’m excited about what the future of the magazine looks like with Stephanie’s hand firmly on the wheel.</p>
+<!-- This is Inline Styling in BODY and it overrides the CUstomized CSS Style by Class/id-->
+<div style="font-style: oblique; color: green;">
+    This is an Inline Styled 1st line.
+</div>
+<div id="para3"> 
+    This is an Exernal Styled line using "id".
+</div>
+
+</body>
+</html>
